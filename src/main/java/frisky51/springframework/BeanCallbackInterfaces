@@ -1,0 +1,5 @@
+InitializingBean.afterPropertiesSet()
+    -> called after the properties are set
+
+DisposableBean.destroy()
+    -> called during bean destruction in shutdown

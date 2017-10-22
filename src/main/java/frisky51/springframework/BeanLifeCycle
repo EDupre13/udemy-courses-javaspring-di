@@ -1,0 +1,47 @@
+Instantiate
+     |
+    \|/
+Populate Properties
+     |
+    \|/
+Call setBeanName of BeanNameAware
+     |
+    \|/
+Call setBeanFactory of BeanFactoryAware
+     |
+    \|/
+Call setApplicationContext of ApplicationContextAware
+     |
+    \|/
+Preinitialization (BeanPostProcessors)
+     |
+    \|/
+afterPropertiesSer of Initializing Beans
+     |
+    \|/
+Custom Init Method
+     |
+    \|/
+Post Initialization (BeanPostProcessors)
+     |
+    \|/
+Bean Ready to Use
+
+Container Shutdown
+     |
+    \|/
+Disposable Bean's destroy()
+     |
+    \|/
+Call Custom Destroy Method
+     |
+    \|/
+Terminated
+
+
+ANNOTATIONS
+    -> @PostConstruct
+        - called after the bean has been constructed,
+          but before it is returned to the requesting object
+    -> @PreDestroy
+        - called just before the bean is destroyed by the container
